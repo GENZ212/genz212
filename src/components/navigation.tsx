@@ -20,36 +20,36 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm">G</span>
-            </div>
-            <span className="font-bold text-xl text-blue-900">GenZ212</span>
-          </Link>
+              <Link href="/" className="flex items-center space-x-2">
+                <div className="h-8 w-8 bg-red-600 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-sm">G</span>
+                </div>
+                <span className="font-bold text-xl text-black">GenZ212</span>
+              </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
               href="/"
-              className="text-sm font-medium hover:text-blue-600 transition-colors"
+              className="text-sm font-medium text-black hover:text-green-600 transition-colors"
             >
               Home
             </Link>
             <Link
               href="/demands"
-              className="text-sm font-medium hover:text-blue-600 transition-colors"
+              className="text-sm font-medium text-black hover:text-red-600 transition-colors"
             >
               Demands
             </Link>
             <Link
               href="/timeline"
-              className="text-sm font-medium hover:text-blue-600 transition-colors"
+              className="text-sm font-medium text-black hover:text-green-600 transition-colors"
             >
               Timeline
             </Link>
             <Link
               href="/resources"
-              className="text-sm font-medium hover:text-blue-600 transition-colors"
+              className="text-sm font-medium text-black hover:text-green-600 transition-colors"
             >
               Resources
             </Link>

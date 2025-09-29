@@ -174,10 +174,10 @@ export default function ResourcesPage() {
     <div className="container mx-auto py-8 px-4 max-w-6xl">
       {/* Page Header */}
       <div className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
           Resources & Support
         </h1>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+        <p className="text-lg text-gray-700 max-w-3xl mx-auto">
           Essential resources for protesters, activists, and anyone exercising their civic rights.
           All information promotes peaceful, lawful action and human rights protection.
         </p>
@@ -200,7 +200,7 @@ export default function ResourcesPage() {
 
         {/* Human Rights Organizations */}
         <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-2">
             <span className="text-3xl">🏛️</span>
             Human Rights Organizations
           </h2>
@@ -287,7 +287,7 @@ export default function ResourcesPage() {
 
         {/* Legal Aid */}
         <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-red-800 mb-6 flex items-center gap-2">
             <span className="text-3xl">⚖️</span>
             Legal Aid & Lawyers
           </h2>
@@ -374,7 +374,7 @@ export default function ResourcesPage() {
 
         {/* Media & References */}
         <section>
-          <h2 className="text-2xl font-bold text-blue-900 mb-6 flex items-center gap-2">
+          <h2 className="text-2xl font-bold text-black mb-6 flex items-center gap-2">
             <span className="text-3xl">📰</span>
             Media References
           </h2>
