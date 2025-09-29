@@ -42,6 +42,12 @@ export function Navigation() {
               Reports
             </Link>
             <Link
+              href="/demands"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Demands
+            </Link>
+            <Link
               href="/forum"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
