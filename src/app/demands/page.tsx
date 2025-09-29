@@ -227,11 +227,19 @@ export default function DemandsPage() {
                   equitable, and prosperous society. Join us in advocating for positive change.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                    Sign the Petition
+                  <Button variant="default" size="lg" className="flex items-center gap-2">
+                    <span className="text-lg">✊</span>
+                    <div className="text-left">
+                      <div className="font-bold">Sign the Petition</div>
+                      <div className="text-xs opacity-90">Support our movement</div>
+                    </div>
                   </Button>
-                  <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
-                    Share These Demands
+                  <Button variant="success" size="lg" className="flex items-center gap-2">
+                    <span className="text-lg">📢</span>
+                    <div className="text-left">
+                      <div className="font-bold">Share These Demands</div>
+                      <div className="text-xs opacity-90">Spread awareness</div>
+                    </div>
                   </Button>
                 </div>
               </CardContent>
