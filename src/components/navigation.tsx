@@ -80,17 +80,18 @@ export function Navigation() {
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-3">
-            <Button 
-              variant="ghost" 
+            <Button
+              variant="ghost"
               className="text-white hover:bg-gray-800 text-sm font-semibold"
               size="sm"
               asChild
             >
-              <Link href="/demands">
-                Join Movement
-              </Link>
+              <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer">
+                <span className="text-lg">💬</span>
+                Join Discord
+              </a>
             </Button>
-            <Button 
+            <Button
               variant="default"
               size="sm"
               className="font-semibold"

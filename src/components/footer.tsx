@@ -86,12 +86,20 @@ export function Footer() {
               Get breaking news and updates on Morocco's youth movement fighting for healthcare and education reform.
             </p>
             <div className="space-y-4">
-              <Button variant="default" size="sm" className="w-full">
-                Subscribe to Updates
-              </Button>
+              <div className="flex gap-3">
+                <Button variant="default" size="sm" className="flex-1">
+                  <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <span className="text-lg">💬</span>
+                    Join Discord
+                  </a>
+                </Button>
+                <Button variant="outline" size="sm" className="flex-1 border-gray-600 text-gray-300 hover:bg-gray-700">
+                  Subscribe to Updates
+                </Button>
+              </div>
               <div className="flex items-center gap-4">
-                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
-                  <span className="text-xl">📘</span>
+                <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
+                  <span className="text-xl">💬</span>
                 </a>
                 <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                   <span className="text-xl">🐦</span>
@@ -101,9 +109,6 @@ export function Footer() {
                 </a>
                 <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
                   <span className="text-xl">📱</span>
-                </a>
-                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
-                  <span className="text-xl">💬</span>
                 </a>
               </div>
             </div>

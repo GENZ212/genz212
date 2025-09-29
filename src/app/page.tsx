@@ -28,16 +28,33 @@ export default function Home() {
                 GenZ212 movement organizes nationwide protests calling for government to prioritize hospitals and education over sports infrastructure spending
               </p>
               
-              {/* Live Ticker */}
-              <div className="flex items-center gap-4 bg-red-600/20 border border-red-600/30 rounded-lg p-4">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                  <span className="text-red-400 font-semibold text-sm">LIVE</span>
-                </div>
-                <p className="text-white text-sm">
-                  Protests continue in Casablanca, Rabat, and Marrakesh as youth activists maintain peaceful demonstrations
-                </p>
+            {/* Live Ticker */}
+            <div className="flex items-center gap-4 bg-red-600/20 border border-red-600/30 rounded-lg p-4">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                <span className="text-red-400 font-semibold text-sm">LIVE</span>
               </div>
+              <p className="text-white text-sm">
+                Protests continue in Casablanca, Rabat, and Marrakesh as youth activists maintain peaceful demonstrations
+              </p>
+            </div>
+
+            {/* Discord CTA */}
+            <div className="flex items-center gap-4 bg-blue-600/20 border border-blue-600/30 rounded-lg p-4">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">💬</span>
+                <span className="text-blue-400 font-semibold">JOIN US ON DISCORD</span>
+              </div>
+              <p className="text-white text-sm">
+                Connect with the GenZ212 community for real-time updates and coordination
+              </p>
+              <Button variant="outline" size="sm" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white ml-auto">
+                <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                  <span className="text-lg">🔗</span>
+                  Join Discord
+                </a>
+              </Button>
+            </div>
             </div>
 
             {/* Action Buttons */}
