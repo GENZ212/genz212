@@ -74,98 +74,161 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Top Stories Section - CNN Style */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-6xl">
-          <div className="flex items-center gap-4 mb-8">
-            <div className="h-1 w-12 bg-red-600"></div>
-            <h2 className="text-2xl font-bold text-black uppercase tracking-wide">Top Stories</h2>
+      {/* Top Stories Section - Enhanced CNN Style */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="container mx-auto px-4 max-w-7xl">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-1 w-16 bg-red-600"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-black uppercase tracking-wide">Top Stories</h2>
+              <div className="h-1 w-16 bg-red-600"></div>
+            </div>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Latest developments in Morocco's youth movement demanding healthcare and education reforms
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Story 1 - Education */}
-            <Card className="bg-white border-l-4 border-green-600 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">🎓</span>
-                  <Badge className="bg-green-100 text-green-800 text-xs">EDUCATION</Badge>
+          {/* Featured Story */}
+          <div className="mb-12">
+            <Card className="bg-white shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden border-0">
+              <div className="grid grid-cols-1 lg:grid-cols-2">
+                <div className="bg-gradient-to-br from-red-600 to-red-800 p-8 text-white flex items-center">
+                  <div>
+                    <div className="flex items-center gap-3 mb-4">
+                      <Badge className="bg-white/20 text-white border-white/30 text-sm px-3 py-1">
+                        🔥 BREAKING
+                      </Badge>
+                      <span className="text-sm opacity-90">Updated 30 minutes ago</span>
+                    </div>
+                    <h3 className="text-3xl font-bold leading-tight mb-4">
+                      GenZ212 Protests Spread to 8+ Cities Across Morocco
+                    </h3>
+                    <p className="text-lg opacity-90 leading-relaxed">
+                      Youth activists coordinate nationwide demonstrations demanding government prioritize healthcare and education over World Cup stadium construction.
+                    </p>
+                  </div>
                 </div>
-                <CardTitle className="text-lg font-bold text-black leading-tight">
+                <div className="p-8 flex items-center">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">📍</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Cities Involved</div>
+                        <div className="text-gray-600 text-sm">Casablanca, Rabat, Marrakesh, Tangier, Agadir</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">👥</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Movement Type</div>
+                        <div className="text-gray-600 text-sm">Peaceful, digital-first organizing</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <span className="text-3xl">📱</span>
+                      <div>
+                        <div className="font-semibold text-gray-900">Platforms Used</div>
+                        <div className="text-gray-600 text-sm">Discord, TikTok, social media</div>
+                      </div>
+                    </div>
+                    <Button asChild variant="outline" size="sm" className="mt-4">
+                      <Link href="/timeline">
+                        Read Full Coverage →
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          {/* Story Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Story 1 - Education */}
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden group cursor-pointer">
+              <div className="h-3 bg-gradient-to-r from-green-500 to-green-600"></div>
+              <CardHeader className="pb-4">
+                <div className="flex items-center justify-between mb-3">
+                  <Badge className="bg-green-100 text-green-800 text-xs font-semibold px-3 py-1">
+                    EDUCATION
+                  </Badge>
+                  <span className="text-xs text-gray-500">2 hours ago</span>
+                </div>
+                <CardTitle className="text-xl font-bold text-black leading-tight group-hover:text-green-700 transition-colors">
                   Schools Lack Basic Supplies While Stadium Construction Continues
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 leading-relaxed mb-4">
                   Students across Morocco face overcrowded classrooms and insufficient resources as billions are allocated to World Cup infrastructure.
                 </p>
-                <div className="mt-3 text-xs text-gray-500">
-                  Updated 2 hours ago
+                <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <span className="text-lg">🎓</span>
+                  <span>Education Crisis</span>
                 </div>
               </CardContent>
             </Card>
 
             {/* Story 2 - Healthcare */}
-            <Card className="bg-white border-l-4 border-red-600 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">🏥</span>
-                  <Badge className="bg-red-100 text-red-800 text-xs">HEALTH</Badge>
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden group cursor-pointer">
+              <div className="h-3 bg-gradient-to-r from-red-500 to-red-600"></div>
+              <CardHeader className="pb-4">
+                <div className="flex items-center justify-between mb-3">
+                  <Badge className="bg-red-100 text-red-800 text-xs font-semibold px-3 py-1">
+                    HEALTH
+                  </Badge>
+                  <span className="text-xs text-gray-500">3 hours ago</span>
                 </div>
-                <CardTitle className="text-lg font-bold text-black leading-tight">
+                <CardTitle className="text-xl font-bold text-black leading-tight group-hover:text-red-700 transition-colors">
                   Hospitals Report Critical Shortages Amid Stadium Spending
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 leading-relaxed mb-4">
                   Medical facilities struggle with equipment shortages while government prioritizes sports infrastructure investments.
                 </p>
-                <div className="mt-3 text-xs text-gray-500">
-                  Updated 3 hours ago
+                <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <span className="text-lg">🏥</span>
+                  <span>Healthcare Crisis</span>
                 </div>
               </CardContent>
             </Card>
 
             {/* Story 3 - Protests */}
-            <Card className="bg-white border-l-4 border-black shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">✊</span>
-                  <Badge className="bg-gray-100 text-black text-xs">PROTESTS</Badge>
+            <Card className="bg-white shadow-lg hover:shadow-xl transition-all duration-300 border-0 overflow-hidden group cursor-pointer">
+              <div className="h-3 bg-gradient-to-r from-black to-gray-800"></div>
+              <CardHeader className="pb-4">
+                <div className="flex items-center justify-between mb-3">
+                  <Badge className="bg-gray-100 text-black text-xs font-semibold px-3 py-1">
+                    PROTESTS
+                  </Badge>
+                  <span className="text-xs text-gray-500">1 hour ago</span>
                 </div>
-                <CardTitle className="text-lg font-bold text-black leading-tight">
+                <CardTitle className="text-xl font-bold text-black leading-tight group-hover:text-gray-700 transition-colors">
                   Youth Activists Organize Through Social Media Platforms
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-700 text-sm leading-relaxed">
+                <p className="text-gray-700 leading-relaxed mb-4">
                   GenZ212 movement uses Discord and TikTok to coordinate peaceful demonstrations across major cities.
                 </p>
-                <div className="mt-3 text-xs text-gray-500">
-                  Updated 1 hour ago
+                <div className="flex items-center gap-2 text-sm text-gray-600">
+                  <span className="text-lg">✊</span>
+                  <span>Digital Organizing</span>
                 </div>
               </CardContent>
             </Card>
+          </div>
 
-            {/* Story 4 - Government Response */}
-            <Card className="bg-white border-l-4 border-green-600 shadow-md hover:shadow-lg transition-shadow">
-              <CardHeader className="pb-3">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="text-2xl">🏛️</span>
-                  <Badge className="bg-green-100 text-green-800 text-xs">POLITICS</Badge>
-                </div>
-                <CardTitle className="text-lg font-bold text-black leading-tight">
-                  Government Faces Growing Pressure to Reallocate Spending
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 text-sm leading-relaxed">
-                  Officials acknowledge youth concerns as protests gain international media attention and support.
-                </p>
-                <div className="mt-3 text-xs text-gray-500">
-                  Updated 4 hours ago
-                </div>
-              </CardContent>
-            </Card>
+          {/* View More Button */}
+          <div className="text-center mt-12">
+            <Button asChild variant="outline" size="lg" className="border-red-600 text-red-600 hover:bg-red-50">
+              <Link href="/timeline" className="flex items-center gap-2">
+                <span>View All Stories</span>
+                <span className="text-lg">→</span>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

@@ -1,89 +1,151 @@
 import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">G</span>
+    <footer className="bg-black text-white">
+      {/* Main Footer Content */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {/* Brand & Mission */}
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3">
+              <div className="h-10 w-10 bg-red-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold">G</span>
               </div>
-              <span className="font-bold text-xl">GenZ212</span>
+              <div className="flex flex-col">
+                <span className="font-bold text-xl text-white">GenZ212</span>
+                <span className="text-xs text-red-400 font-semibold tracking-wider">MOROCCO NEWS</span>
+              </div>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed">
-              Moroccan Youth Voice – A movement for education, healthcare, dignity, jobs, and a future of fairness and opportunity.
+            <p className="text-gray-300 leading-relaxed">
+              Youth-led movement demanding healthcare and education over World Cup stadiums. 
+              Peaceful, digital-first organizing for systemic change across Morocco.
             </p>
+            <div className="flex items-center gap-2 text-sm">
+              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+              <span className="text-red-400 font-semibold">LIVE COVERAGE</span>
+            </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Quick Links</h3>
-            <nav className="flex flex-col space-y-2">
-              <Link href="/" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                Home
+          {/* Navigation */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-8 bg-red-600"></div>
+              <h3 className="font-bold text-lg uppercase tracking-wide">Sections</h3>
+            </div>
+            <nav className="space-y-3">
+              <Link href="/" className="block text-gray-300 hover:text-red-400 transition-colors font-medium">
+                Breaking News
               </Link>
-              <Link href="/demands" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                Our Demands
+              <Link href="/demands" className="block text-gray-300 hover:text-red-400 transition-colors font-medium">
+                Policy Demands
               </Link>
-              <Link href="/timeline" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                Timeline
+              <Link href="/timeline" className="block text-gray-300 hover:text-red-400 transition-colors font-medium">
+                Live Timeline
               </Link>
-              <Link href="/resources" className="text-gray-300 hover:text-blue-400 transition-colors text-sm">
-                Resources
+              <Link href="/resources" className="block text-gray-300 hover:text-red-400 transition-colors font-medium">
+                Resources & Support
               </Link>
             </nav>
           </div>
 
-          {/* Values */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Our Values</h3>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <span className="text-blue-400">✌️</span>
-                <span className="text-gray-300 text-sm">Peaceful Action</span>
+          {/* Movement Stats */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-8 bg-green-600"></div>
+              <h3 className="font-bold text-lg uppercase tracking-wide">Movement</h3>
+            </div>
+            <div className="space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300 text-sm">Cities Involved</span>
+                <span className="font-bold text-red-400">8+</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-green-400">📱</span>
-                <span className="text-gray-300 text-sm">Digital-First</span>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300 text-sm">Key Demands</span>
+                <span className="font-bold text-green-400">15+</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <span className="text-purple-400">🤝</span>
-                <span className="text-gray-300 text-sm">Collective Power</span>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300 text-sm">Approach</span>
+                <span className="font-bold text-white">Peaceful</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span className="text-gray-300 text-sm">Platform</span>
+                <span className="font-bold text-blue-400">Digital-First</span>
               </div>
             </div>
           </div>
 
-          {/* Contact */}
-          <div className="space-y-4">
-            <h3 className="font-semibold text-lg">Get Involved</h3>
+          {/* Newsletter & Social */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="h-0.5 w-8 bg-red-600"></div>
+              <h3 className="font-bold text-lg uppercase tracking-wide">Stay Updated</h3>
+            </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Join the movement for positive change. Follow us on social media and participate in our peaceful actions.
+              Get breaking news and updates on Morocco's youth movement fighting for healthcare and education reform.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <span className="text-lg">📘</span>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <span className="text-lg">🐦</span>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <span className="text-lg">📷</span>
-              </a>
-              <a href="#" className="text-gray-300 hover:text-blue-400 transition-colors">
-                <span className="text-lg">📱</span>
-              </a>
+            <div className="space-y-4">
+              <Button variant="default" size="sm" className="w-full">
+                Subscribe to Updates
+              </Button>
+              <div className="flex items-center gap-4">
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <span className="text-xl">📘</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <span className="text-xl">🐦</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <span className="text-xl">📷</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <span className="text-xl">📱</span>
+                </a>
+                <a href="#" className="text-gray-400 hover:text-red-400 transition-colors">
+                  <span className="text-xl">💬</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-300 text-sm">
-            © 2025 GenZ212 – Moroccan Youth Voice • Built with ❤️ for a better Morocco
-          </p>
+      {/* Breaking News Ticker */}
+      <div className="bg-red-600 py-2">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-4">
+            <span className="font-bold text-sm text-white tracking-wider">BREAKING</span>
+            <div className="flex-1 overflow-hidden">
+              <div className="animate-scroll whitespace-nowrap text-sm text-white">
+                🏥 Hospitals lack basic supplies while billions spent on stadiums • 
+                🎓 Students demand education funding over sports infrastructure • 
+                ✊ Peaceful protests continue across 8+ Moroccan cities • 
+                📱 Youth organize through Discord and TikTok platforms
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Copyright */}
+      <div className="bg-gray-900 py-6">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <div className="flex items-center gap-6 text-sm text-gray-400">
+              <span>© 2025 GenZ212</span>
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Use</Link>
+              <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+            </div>
+            <div className="flex items-center gap-4 text-sm text-gray-400">
+              <span>Moroccan Youth Voice</span>
+              <span>•</span>
+              <span>Peaceful Movement</span>
+              <span>•</span>
+              <span className="text-green-400">Digital-First</span>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

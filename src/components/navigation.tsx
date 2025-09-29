@@ -1,20 +1,10 @@
 "use client"
 
-import { useSession, signIn, signOut } from "next-auth/react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
 import { usePathname } from "next/navigation"
 
 export function Navigation() {
-  const { data: session, status } = useSession()
   const pathname = usePathname()
 
   return (
@@ -88,79 +78,28 @@ export function Navigation() {
             </div>
           </div>
 
-          {/* User Menu */}
-          <div className="flex items-center space-x-4">
-            {status === "loading" ? (
-              <div className="h-8 w-8 bg-gray-700 rounded-full animate-pulse" />
-            ) : session?.user ? (
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" className="relative h-8 w-8 rounded-full hover:bg-gray-800">
-                    <Avatar className="h-8 w-8">
-                      <AvatarImage src={session.user.image || ""} alt={session.user.name || ""} />
-                      <AvatarFallback className="bg-red-600 text-white">
-                        {session.user.name?.charAt(0) || session.user.email?.charAt(0)}
-                      </AvatarFallback>
-                    </Avatar>
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56 bg-gray-900 border-gray-700 text-white" align="end" forceMount>
-                  <div className="flex items-center justify-start gap-2 p-2">
-                    <div className="flex flex-col space-y-1 leading-none">
-                      {session.user.name && (
-                        <p className="font-medium text-white">{session.user.name}</p>
-                      )}
-                      {session.user.email && (
-                        <p className="w-[200px] truncate text-sm text-gray-400">
-                          {session.user.email}
-                        </p>
-                      )}
-                      {(session.user as any).role && (
-                        <Badge variant="secondary" className="w-fit bg-red-600 text-white">
-                          {(session.user as any).role}
-                        </Badge>
-                      )}
-                    </div>
-                  </div>
-                  <DropdownMenuItem asChild className="text-white hover:bg-gray-800">
-                    <Link href="/profile">Profile</Link>
-                  </DropdownMenuItem>
-                  {(session.user as any).role === 'ADMIN' && (
-                    <DropdownMenuItem asChild className="text-white hover:bg-gray-800">
-                      <Link href="/admin">Admin</Link>
-                    </DropdownMenuItem>
-                  )}
-                  <DropdownMenuItem
-                    className="cursor-pointer text-white hover:bg-gray-800"
-                    onSelect={(event) => {
-                      event.preventDefault()
-                      signOut()
-                    }}
-                  >
-                    Sign Out
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
-            ) : (
-              <div className="flex items-center space-x-3">
-                <Button 
-                  variant="ghost" 
-                  onClick={() => signIn()} 
-                  className="text-white hover:bg-gray-800 text-sm font-semibold"
-                  size="sm"
-                >
-                  Sign In
-                </Button>
-                <Button 
-                  onClick={() => signIn()} 
-                  variant="default"
-                  size="sm"
-                  className="font-semibold"
-                >
-                  Subscribe
-                </Button>
-              </div>
-            )}
+          {/* Action Buttons */}
+          <div className="flex items-center space-x-3">
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-gray-800 text-sm font-semibold"
+              size="sm"
+              asChild
+            >
+              <Link href="/demands">
+                Join Movement
+              </Link>
+            </Button>
+            <Button 
+              variant="default"
+              size="sm"
+              className="font-semibold"
+              asChild
+            >
+              <Link href="/timeline">
+                Live Updates
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
