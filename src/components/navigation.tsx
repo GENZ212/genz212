@@ -21,43 +21,37 @@ export function Navigation() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-bold">HR</span>
+            <div className="h-8 w-8 bg-blue-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm">G</span>
             </div>
-            <span className="font-bold text-xl">Rights Hub</span>
+            <span className="font-bold text-xl text-blue-900">GenZ212</span>
           </Link>
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-6">
             <Link
-              href="/directory"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              href="/"
+              className="text-sm font-medium hover:text-blue-600 transition-colors"
             >
-              Directory
-            </Link>
-            <Link
-              href="/reports"
-              className="text-sm font-medium hover:text-primary transition-colors"
-            >
-              Reports
+              Home
             </Link>
             <Link
               href="/demands"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-blue-600 transition-colors"
             >
               Demands
             </Link>
             <Link
-              href="/forum"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              href="/timeline"
+              className="text-sm font-medium hover:text-blue-600 transition-colors"
             >
-              Forum
+              Timeline
             </Link>
             <Link
-              href="/safety"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              href="/resources"
+              className="text-sm font-medium hover:text-blue-600 transition-colors"
             >
-              Safety
+              Resources
             </Link>
           </div>
 
@@ -110,14 +104,14 @@ export function Navigation() {
                       signOut()
                     }}
                   >
-                    Sign out
+                    Sign Out
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
             ) : (
               <div className="flex items-center space-x-2">
                 <Button variant="ghost" onClick={() => signIn()}>
-                  Sign in
+                  Sign In
                 </Button>
                 <Button onClick={() => signIn()}>
                   Get Started

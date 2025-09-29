@@ -1,13 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
 
 export default function DemandsPage() {
+
   return (
     <div className="container mx-auto py-8 px-4 max-w-6xl">
       {/* Page Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-          Detailed Demands
+          Our Detailed Demands
         </h1>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto">
           Comprehensive demands for social justice, economic reform, and improved quality of life across Morocco
@@ -219,12 +221,12 @@ export default function DemandsPage() {
               equitable, and prosperous society. Join us in advocating for positive change.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              <Button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                 Sign the Petition
-              </button>
-              <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+              </Button>
+              <Button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                 Share These Demands
-              </button>
+              </Button>
             </div>
           </CardContent>
         </Card>

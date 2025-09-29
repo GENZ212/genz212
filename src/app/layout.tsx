@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "@/components/providers/session-provider";
 import { Navigation } from "@/components/navigation";
+import { Footer } from "@/components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Human Rights Directory | Legal Hub",
-  description: "Find human rights organizations, lawyers, medical support, and government contacts in Morocco",
+  title: "GenZ212 – Moroccan Youth Voice",
+  description: "Youth-led movement in Morocco fighting for education, healthcare, dignity, jobs, and a future of fairness and opportunity through peaceful, digital-first collective action.",
 };
 
 export default function RootLayout({
@@ -34,6 +35,7 @@ export default function RootLayout({
           <main className="min-h-screen">
             {children}
           </main>
+          <Footer />
         </SessionProvider>
       </body>
     </html>
