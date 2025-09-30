@@ -1,9 +1,13 @@
+'use client'
+
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { useI18n } from "@/components/providers/i18n-provider"
 
 export default function Home() {
+  const { t, tArray } = useI18n()
   return (
     <div className="min-h-screen bg-white">
       {/* Breaking News Hero - CNN Style */}
@@ -13,29 +17,29 @@ export default function Home() {
             {/* Breaking News Banner */}
             <div className="flex items-center gap-4 mb-8">
               <div className="bg-red-600 px-4 py-2 rounded">
-                <span className="font-bold text-sm tracking-wider">BREAKING</span>
+                <span className="font-bold text-sm tracking-wider">{t('hero.breaking')}</span>
               </div>
               <div className="h-0.5 w-16 bg-red-600"></div>
-              <span className="text-red-400 font-semibold text-sm tracking-wider uppercase">Live Coverage</span>
+              <span className="text-red-400 font-semibold text-sm tracking-wider uppercase">{t('hero.liveCoverage')}</span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Morocco Youth Demand Healthcare Over World Cup Stadiums
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                {t('hero.mainHeadline')}
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-4xl leading-relaxed">
-                GenZ212 movement organizes nationwide protests calling for government to prioritize hospitals and education over sports infrastructure spending
+                {t('hero.subHeadline')}
               </p>
               
             {/* Live Ticker */}
             <div className="flex items-center gap-4 bg-red-600/20 border border-red-600/30 rounded-lg p-4">
               <div className="flex items-center gap-2">
                 <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-                <span className="text-red-400 font-semibold text-sm">LIVE</span>
+                <span className="text-red-400 font-semibold text-sm">{t('common.live')}</span>
               </div>
               <p className="text-white text-sm">
-                Protests continue in Casablanca, Rabat, and Marrakesh as youth activists maintain peaceful demonstrations
+                {t('hero.liveUpdate')}
               </p>
             </div>
 
@@ -43,15 +47,15 @@ export default function Home() {
             <div className="flex items-center gap-4 bg-blue-600/20 border border-blue-600/30 rounded-lg p-4">
               <div className="flex items-center gap-2">
                 <span className="text-2xl">💬</span>
-                <span className="text-blue-400 font-semibold">JOIN US ON DISCORD</span>
+                <span className="text-blue-400 font-semibold">{t('hero.discordTitle')}</span>
               </div>
               <p className="text-white text-sm">
-                Connect with the GenZ212 community for real-time updates and coordination
+                {t('hero.discordDescription')}
               </p>
               <Button variant="outline" size="sm" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white ml-auto">
                 <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
                   <span className="text-lg">🔗</span>
-                  Join Discord
+                  {t('hero.joinDiscord')}
                 </a>
               </Button>
             </div>

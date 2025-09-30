@@ -1,4 +1,3 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 
 interface TimelineEvent {
@@ -12,34 +11,50 @@ interface TimelineEvent {
 
 const timelineEvents: TimelineEvent[] = [
   {
-    date: "September 27–28, 2025",
-    title: "Nationwide Protests Begin",
-    description: "GenZ212 and Moroccan Youth Voice organize coordinated demonstrations across major cities via Discord and TikTok. Protesters demand improved healthcare and education, criticizing government spending on World Cup stadiums over essential services.",
+    date: "September 27, 2025",
+    title: "Nationwide Protests Begin Across 11 Cities",
+    description: "GenZ212 and Moroccan Youth Voice organize coordinated demonstrations across at least 11 major cities via Discord, TikTok, and Instagram. Protesters demand urgent reforms in healthcare and education, criticizing government spending on World Cup infrastructure while public services deteriorate. The movement, largely leaderless and organized through social media, marks some of Morocco's largest antigovernment rallies in years.",
     type: "protest",
-    locations: ["Rabat", "Casablanca", "Marrakesh", "Agadir", "Tangier"],
-    impact: "Key slogans: 'We want hospitals, not stadiums' and 'We don't want the World Cup; we want healthcare'"
+    locations: ["Rabat", "Casablanca", "Marrakesh", "Agadir", "Tangier", "Oujda", "Fes", "Meknes", "Kenitra", "Tetouan", "Safi"],
+    impact: "Key slogans: 'We want hospitals, not stadiums' and 'We don't want the World Cup; we want healthcare' – Demonstrates widespread youth frustration with government priorities"
   },
   {
-    date: "September 27–28, 2025",
-    title: "Heavy Police Response & Arrests",
-    description: "Protests met with heavy police presence across all cities. Dozens of protesters arrested, with many later released. Security forces reportedly deleted protest videos from participants' phones.",
+    date: "September 28, 2025",
+    title: "Heavy Police Response & Mass Arrests",
+    description: "Protests continue for a second day, met with heavy security presence across all cities. Authorities report nearly 200 arrests nationwide. Security forces delete protest videos from participants' phones and prevent media coverage. In Rabat, plainclothes officers detain individuals attempting to speak to journalists.",
     type: "detention",
-    locations: ["Rabat", "Casablanca", "Marrakesh", "Agadir", "Tangier"],
-    impact: "Suppression of documentation and evidence of peaceful protests"
+    locations: ["Rabat", "Casablanca", "Marrakesh", "Agadir", "Tangier", "Oujda", "Fes", "Meknes", "Kenitra", "Tetouan", "Safi"],
+    impact: "Suppression of documentation and evidence of peaceful protests – Nearly 200 arrests reported by authorities"
   },
   {
     date: "September 29, 2025",
-    title: "Movement Declares Continued Mobilization",
-    description: "Despite arrests, GenZ212 declares intentions to continue nationwide demonstrations. Movement emphasizes its peaceful and leaderless nature while maintaining pressure for reforms.",
-    type: "development",
-    impact: "Demonstrates resilience and commitment to sustained activism"
+    title: "Protests Escalate with Violence in Oujda",
+    description: "Demonstrations persist for a third consecutive day, turning violent in Oujda where protesters throw stones at security forces. The movement gains momentum as youth unemployment reaches 35.8%. Child protection advocate Najat Anouar is briefly arrested while investigating claims of detained minors. International media coverage intensifies.",
+    type: "protest",
+    locations: ["Oujda", "Rabat", "Casablanca", "Marrakesh", "Agadir", "Tangier"],
+    impact: "First reported violence highlights growing frustration – International attention focuses on youth economic challenges and deteriorating public services"
   },
   {
     date: "September 29, 2025",
-    title: "International Media Coverage",
-    description: "The movement gains international attention, with coverage from major news outlets highlighting youth frustration over limited economic opportunities and deteriorating public services.",
+    title: "Healthcare Crisis Sparks Outrage",
+    description: "Recent maternal health crisis in Agadir, where eight women died during childbirth due to understaffing and lack of hospital resources, intensifies public outrage. Protesters highlight the deteriorating state of public hospitals, overcrowded conditions, and outdated medical equipment as symbols of government neglect.",
     type: "development",
-    impact: "Global awareness of Morocco's youth movement and their demands for government priority reforms"
+    locations: ["Agadir"],
+    impact: "Maternal deaths become rallying point for healthcare reform demands – Exposes critical failures in public health system"
+  },
+  {
+    date: "September 30, 2025",
+    title: "GenZ212 Announces Continued Mobilization",
+    description: "Despite government crackdowns and arrests, GenZ212 declares intentions to continue protests indefinitely. The movement emphasizes its peaceful nature while maintaining pressure for systemic reforms. Leaders vow that 'protesting is the only way to win our rights' as the movement signals no end in sight.",
+    type: "announcement",
+    impact: "Demonstrates resilience and long-term commitment to sustained activism – Movement evolves into broader challenge to government priorities"
+  },
+  {
+    date: "September 30, 2025",
+    title: "Education System Under Fire",
+    description: "Demonstrators demand comprehensive education reforms addressing overcrowded classrooms, outdated curricula, and lack of resources. Students and young professionals highlight how poor education quality contributes to high unemployment and limited economic opportunities for Moroccan youth.",
+    type: "development",
+    impact: "Education emerges as core demand alongside healthcare – Links poor schooling to broader economic challenges facing young Moroccans"
   }
 ]
 
@@ -58,20 +73,6 @@ const getEventIcon = (type: string) => {
   }
 }
 
-const getEventColor = (type: string) => {
-  switch (type) {
-    case 'protest':
-      return 'bg-red-100 text-red-800 border-red-200'
-    case 'announcement':
-      return 'bg-green-100 text-green-800 border-green-200'
-    case 'detention':
-      return 'bg-black text-white border-black'
-    case 'development':
-      return 'bg-green-100 text-green-800 border-green-200'
-    default:
-      return 'bg-gray-100 text-gray-800 border-gray-200'
-  }
-}
 
 export default function TimelinePage() {
   return (
@@ -87,7 +88,7 @@ export default function TimelinePage() {
             GenZ212 Morocco Protests
           </h1>
           <p className="text-xl text-gray-300 max-w-4xl">
-            Nationwide demonstrations demand healthcare and education funding over World Cup infrastructure spending
+            Youth-led protests across 11+ cities demand urgent healthcare and education reforms amid deteriorating public services and government spending on World Cup infrastructure
           </p>
         </div>
       </div>
@@ -201,9 +202,11 @@ export default function TimelinePage() {
             </div>
             <h3 className="text-3xl font-bold mb-4">Movement Continues</h3>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              The GenZ212 movement maintains its peaceful resistance despite government crackdowns. 
-              Digital organizing through Discord and TikTok continues as youth activists demand 
-              healthcare and education funding over World Cup infrastructure spending.
+              The GenZ212 movement maintains its peaceful resistance despite government crackdowns and nearly 200 arrests.
+              Digital organizing through Discord, TikTok, and Instagram continues as youth activists demand
+              urgent healthcare and education reforms. With youth unemployment at 35.8% and recent maternal health
+              crises exposing critical failures in public hospitals, protesters vow continued mobilization,
+              declaring &quot;protesting is the only way to win our rights.&quot;
             </p>
             <div className="flex items-center gap-4">
               <div className="flex items-center gap-2">

@@ -1,0 +1,206 @@
+{
+  "common": {
+    "breaking": "URGENT",
+    "live": "EN DIRECT",
+    "urgent": "URGENT",
+    "priority1": "PRIORITÉ 1",
+    "essential": "ESSENTIEL",
+    "summary": "RÉSUMÉ"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "demands": "Revendications",
+    "timeline": "Chronologie",
+    "resources": "Ressources"
+  },
+  "hero": {
+    "breaking": "URGENT",
+    "liveCoverage": "Couverture en Direct",
+    "mainHeadline": "Les Jeunes Marocains Exigent des Soins de Santé Plutôt que des Stades de Coupe du Monde",
+    "subHeadline": "Le mouvement GenZ212 organise des manifestations nationales appelant le gouvernement à prioriser les hôpitaux et l'éducation plutôt que les dépenses d'infrastructure sportive",
+    "liveUpdate": "Manifestations pacifiques au Maroc dans 11 villes",
+    "discordTitle": "REJOIGNEZ-NOUS SUR DISCORD",
+    "discordDescription": "Connectez-vous avec la communauté GenZ212 pour des mises à jour en temps réel et la coordination",
+    "joinDiscord": "Rejoindre Discord"
+  },
+  "actions": {
+    "watchTimeline": "Voir la Chronologie",
+    "watchTimelineDesc": "Couverture en direct des manifestations",
+    "readDemands": "Lire les Revendications",
+    "readDemandsDesc": "Soins de santé avant les stades",
+    "resources": "Ressources",
+    "resourcesDesc": "Support et contacts"
+  },
+  "topStories": {
+    "title": "Principales Actualités",
+    "subtitle": "Derniers développements du mouvement des jeunes marocains exigeant des réformes de la santé et de l'éducation",
+    "featuredTitle": "Les Manifestations GenZ212 s'Étendent à Plus de 8 Villes au Maroc",
+    "featuredDescription": "Les jeunes activistes coordonnent des manifestations nationales exigeant que le gouvernement priorise la santé et l'éducation plutôt que la construction de stades de Coupe du Monde.",
+    "citiesInvolved": "Villes Impliquées",
+    "citiesList": "Casablanca, Rabat, Marrakech, Tanger, Agadir",
+    "movementType": "Type de Mouvement",
+    "movementTypeDesc": "Pacifique, organisation numérique d'abord",
+    "platformsUsed": "Plateformes Utilisées",
+    "platformsList": "Discord, TikTok, réseaux sociaux",
+    "readFullCoverage": "Lire la Couverture Complète →",
+    "viewAllStories": "Voir Toutes les Actualités"
+  },
+  "stories": {
+    "education": {
+      "badge": "ÉDUCATION",
+      "title": "Les Écoles Manquent de Fournitures de Base Pendant que la Construction de Stades Continue",
+      "description": "Les étudiants à travers le Maroc font face à des salles de classe surpeuplées et des ressources insuffisantes alors que des milliards sont alloués à l'infrastructure de la Coupe du Monde.",
+      "tag": "Crise de l'Éducation"
+    },
+    "health": {
+      "badge": "SANTÉ",
+      "title": "Les Hôpitaux Signalent des Pénuries Critiques Pendant les Dépenses de Stades",
+      "description": "Les installations médicales luttent contre les pénuries d'équipement tandis que le gouvernement priorise les investissements d'infrastructure sportive.",
+      "tag": "Crise des Soins de Santé"
+    },
+    "protests": {
+      "badge": "MANIFESTATIONS",
+      "title": "Les Jeunes Activistes s'Organisent via les Plateformes de Réseaux Sociaux",
+      "description": "Le mouvement GenZ212 utilise Discord et TikTok pour coordonner des manifestations pacifiques dans les grandes villes.",
+      "tag": "Organisation Numérique"
+    }
+  },
+  "analysis": {
+    "title": "Analyse",
+    "deepDive": "ANALYSE APPROFONDIE",
+    "mainTitle": "Comment les Réseaux Sociaux ont Transformé le Mouvement des Jeunes Marocains",
+    "mainDescription": "Le mouvement GenZ212 représente une nouvelle génération d'activistes marocains qui ont maîtrisé l'organisation numérique. Grâce aux serveurs Discord et aux campagnes TikTok, ils ont contourné les médias traditionnels pour mobiliser des milliers de personnes à travers le pays.",
+    "digitalStrategy": "Stratégie Numérique d'Abord",
+    "peacefulResistance": "Résistance Pacifique",
+    "grassroots": "Organisation Populaire",
+    "byTheNumbers": "En Chiffres",
+    "citiesInvolved": "Villes Impliquées",
+    "daysOfProtests": "Jours de Manifestations",
+    "socialPlatforms": "Plateformes Sociales",
+    "movementType": "Type de Mouvement",
+    "peaceful": "Pacifique",
+    "keyDemands": "Revendications Clés",
+    "healthcareOverStadiums": "Soins de santé avant les stades",
+    "educationFunding": "Priorité au financement de l'éducation",
+    "youthJobs": "Création d'emplois pour les jeunes",
+    "transparency": "Transparence gouvernementale"
+  },
+  "callToAction": {
+    "stayInformed": "Restez Informé",
+    "followStory": "Suivez l'Histoire",
+    "description": "Obtenez les dernières mises à jour sur le mouvement des jeunes marocains et leur lutte pour la réforme des soins de santé et de l'éducation",
+    "latestUpdates": "Dernières Mises à Jour",
+    "fullDemands": "Revendications Complètes"
+  },
+  "demands": {
+    "title": "Nos Revendications Détaillées",
+    "subtitle": "Revendications principales priorisant les soins de santé et l'éducation plutôt que l'infrastructure sportive. Nous voulons des hôpitaux, pas des stades.",
+    "urgentMessage": "Mouvement national exigeant que le gouvernement réalloue les dépenses de la Coupe du Monde aux services essentiels",
+    "socialDemands": "Revendications Sociales",
+    "socialDesc": "Services essentiels qui impactent directement la vie quotidienne et le bien-être des citoyens",
+    "economicDemands": "Revendications Économiques",
+    "economicDesc": "Réformes économiques pour créer des opportunités et améliorer le niveau de vie de tous les Marocains",
+    "currentProblems": "Problèmes Actuels",
+    "whatWeDemand": "Ce Que Nous Exigeons",
+    "coreMessage": "MESSAGE PRINCIPAL",
+    "hospitalsOverStadiums": "Hôpitaux avant stades - Les soins de santé et l'éducation doivent passer avant l'infrastructure sportive",
+    "supportDemands": "Soutenez Ces Revendications",
+    "supportDescription": "Ces revendications représentent la voix collective du peuple marocain pour une société plus juste, équitable et prospère. Rejoignez-nous pour plaider en faveur d'un changement positif.",
+    "signPetition": "Signer la Pétition",
+    "supportMovement": "Soutenez notre mouvement",
+    "shareDemands": "Partagez Ces Revendications",
+    "spreadAwareness": "Sensibilisez",
+    "cities": "Villes",
+    "sectors": "Secteurs",
+    "demands": "Revendications",
+    "peaceful": "Pacifique"
+  },
+  "education": {
+    "title": "Refonte du Système Éducatif",
+    "problems": [
+      "Peu d'écoles dans les zones rurales et reculées",
+      "Pénurie d'enseignants et salles de classe surpeuplées",
+      "Programmes obsolètes et non numériques",
+      "Faibles opportunités d'apprentissage de l'anglais"
+    ],
+    "demands": [
+      "Construire et équiper de nouvelles écoles dans les zones reculées",
+      "Embaucher des enseignants pour réduire la surpopulation dans les salles de classe",
+      "Moderniser les programmes et numériser l'éducation",
+      "Soutenir le transport scolaire pour les étudiants"
+    ],
+    "criticalReform": "RÉFORME CRITIQUE",
+    "englishReform": "Adopter l'anglais comme deuxième langue au lieu du français pour préparer les jeunes aux opportunités mondiales"
+  },
+  "health": {
+    "title": "Urgence de Santé Publique",
+    "problems": [
+      "Peu de médecins par rapport à la population",
+      "Les hôpitaux manquent d'équipement et de fournitures",
+      "Prix élevés des médicaments",
+      "Services d'ambulance faibles dans les zones reculées",
+      "Longs rendez-vous de patients en raison du manque de numérisation"
+    ],
+    "demands": [
+      "Augmenter le nombre de médecins pour 1000 citoyens selon les normes internationales",
+      "Fournir des fournitures médicales essentielles et de l'équipement à toutes les installations de soins de santé",
+      "Soutenir la production pharmaceutique locale pour réduire les prix des médicaments",
+      "Développer les services d'ambulance et de transport médical dans les zones rurales",
+      "Numériser les rendez-vous médicaux pour réduire les temps d'attente"
+    ],
+    "urgentPriority": "PRIORITÉ URGENTE",
+    "hospitalsFirst": "Hôpitaux avant stades - Arrêter de dépenser des milliards sur les stades de la Coupe du Monde pendant que les hôpitaux manquent de fournitures de base"
+  },
+  "living": {
+    "title": "Vie Digne et Droits de l'Homme",
+    "problems": [
+      "Logement inadéquat et coûteux",
+      "Transport public faible",
+      "Villages semi-isolés et zones reculées marginalisées",
+      "Eau potable sûre pas largement disponible",
+      "Infrastructure ancienne ou en détérioration"
+    ],
+    "demands": [
+      "Fournir un logement abordable et décent pour toutes les familles",
+      "Améliorer l'infrastructure de transport public à l'échelle nationale",
+      "Briser l'isolement des villages et zones semi-rurales",
+      "Fournir de l'eau potable sûre répondant aux normes internationales à travers le royaume",
+      "Réparer les routes, ponts, réseaux d'eau et d'électricité"
+    ]
+  },
+  "economy": {
+    "title": "Réforme Économique et Justice",
+    "problems": [
+      "Prix élevés des biens de base",
+      "Salaires et pensions faibles",
+      "Chômage élevé surtout chez les jeunes",
+      "Monopoles répandus, peu de concurrence équitable",
+      "Grandes entreprises et multinationales sans surveillance adéquate",
+      "La privatisation a aggravé les problèmes",
+      "Faible investissement dans les entreprises marocaines",
+      "Forte dépendance aux prêts internationaux"
+    ],
+    "demands": [
+      "Réduire les prix et soutenir les biens essentiels pour les familles",
+      "Améliorer les salaires et pensions pour correspondre aux coûts de la vie",
+      "Créer des opportunités d'emploi pour les jeunes et réduire le chômage",
+      "Lutter contre les monopoles et encourager la concurrence équitable",
+      "Soutenir les petites et moyennes entreprises (PME)",
+      "Renforcer la surveillance des grandes entreprises/multinationales",
+      "Limiter la privatisation excessive des services publics",
+      "Investir dans les entreprises marocaines et l'économie locale",
+      "Prioriser le remboursement responsable des prêts internationaux"
+    ],
+    "debtCrisis": "CRISE DE LA DETTE",
+    "debtMessage": "Prioriser le remboursement des prêts de la Banque mondiale pour réduire le fardeau de la dette nationale"
+  },
+  "summary": {
+    "title": "En Résumé, Ce Que Nous Exigeons",
+    "points": [
+      "Améliorer les services de base (éducation, santé, logement, transport, eau)",
+      "Soutenir l'économie locale et créer des opportunités d'emploi pour les jeunes",
+      "Assurer les droits de l'homme et une vie digne pour tous les citoyens",
+      "Numériser et moderniser l'infrastructure et les services pour réduire les disparités"
+    ]
+  }
+}

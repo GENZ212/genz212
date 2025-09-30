@@ -1,0 +1,206 @@
+{
+  "common": {
+    "breaking": "BREAKING",
+    "live": "LIVE",
+    "urgent": "URGENT",
+    "priority1": "PRIORITY 1",
+    "essential": "ESSENTIAL",
+    "summary": "SUMMARY"
+  },
+  "navigation": {
+    "home": "Home",
+    "demands": "Demands",
+    "timeline": "Timeline",
+    "resources": "Resources"
+  },
+  "hero": {
+    "breaking": "BREAKING",
+    "liveCoverage": "Live Coverage",
+    "mainHeadline": "Morocco Youth Demand Healthcare Over World Cup Stadiums",
+    "subHeadline": "GenZ212 movement organizes nationwide protests calling for government to prioritize hospitals and education over sports infrastructure spending",
+    "liveUpdate": "Protests in Morocco across 11 cities continue peacefully",
+    "discordTitle": "JOIN US ON DISCORD",
+    "discordDescription": "Connect with the GenZ212 community for real-time updates and coordination",
+    "joinDiscord": "Join Discord"
+  },
+  "actions": {
+    "watchTimeline": "Watch Timeline",
+    "watchTimelineDesc": "Live coverage of protests",
+    "readDemands": "Read Demands",
+    "readDemandsDesc": "Healthcare over stadiums",
+    "resources": "Resources",
+    "resourcesDesc": "Support & contacts"
+  },
+  "topStories": {
+    "title": "Top Stories",
+    "subtitle": "Latest developments in Morocco's youth movement demanding healthcare and education reforms",
+    "featuredTitle": "GenZ212 Protests Spread to 8+ Cities Across Morocco",
+    "featuredDescription": "Youth activists coordinate nationwide demonstrations demanding government prioritize healthcare and education over World Cup stadium construction.",
+    "citiesInvolved": "Cities Involved",
+    "citiesList": "Casablanca, Rabat, Marrakesh, Tangier, Agadir",
+    "movementType": "Movement Type",
+    "movementTypeDesc": "Peaceful, digital-first organizing",
+    "platformsUsed": "Platforms Used",
+    "platformsList": "Discord, TikTok, social media",
+    "readFullCoverage": "Read Full Coverage →",
+    "viewAllStories": "View All Stories"
+  },
+  "stories": {
+    "education": {
+      "badge": "EDUCATION",
+      "title": "Schools Lack Basic Supplies While Stadium Construction Continues",
+      "description": "Students across Morocco face overcrowded classrooms and insufficient resources as billions are allocated to World Cup infrastructure.",
+      "tag": "Education Crisis"
+    },
+    "health": {
+      "badge": "HEALTH",
+      "title": "Hospitals Report Critical Shortages Amid Stadium Spending",
+      "description": "Medical facilities struggle with equipment shortages while government prioritizes sports infrastructure investments.",
+      "tag": "Healthcare Crisis"
+    },
+    "protests": {
+      "badge": "PROTESTS",
+      "title": "Youth Activists Organize Through Social Media Platforms",
+      "description": "GenZ212 movement uses Discord and TikTok to coordinate peaceful demonstrations across major cities.",
+      "tag": "Digital Organizing"
+    }
+  },
+  "analysis": {
+    "title": "Analysis",
+    "deepDive": "DEEP DIVE",
+    "mainTitle": "How Social Media Transformed Morocco's Youth Movement",
+    "mainDescription": "The GenZ212 movement represents a new generation of Moroccan activists who have mastered digital organizing. Through Discord servers and TikTok campaigns, they've bypassed traditional media to mobilize thousands across the country.",
+    "digitalStrategy": "Digital-First Strategy",
+    "peacefulResistance": "Peaceful Resistance",
+    "grassroots": "Grassroots Organization",
+    "byTheNumbers": "By The Numbers",
+    "citiesInvolved": "Cities Involved",
+    "daysOfProtests": "Days of Protests",
+    "socialPlatforms": "Social Platforms",
+    "movementType": "Movement Type",
+    "peaceful": "Peaceful",
+    "keyDemands": "Key Demands",
+    "healthcareOverStadiums": "Healthcare over stadiums",
+    "educationFunding": "Education funding priority",
+    "youthJobs": "Youth job creation",
+    "transparency": "Government transparency"
+  },
+  "callToAction": {
+    "stayInformed": "Stay Informed",
+    "followStory": "Follow the Story",
+    "description": "Get the latest updates on Morocco's youth movement and their fight for healthcare and education reform",
+    "latestUpdates": "Latest Updates",
+    "fullDemands": "Full Demands"
+  },
+  "demands": {
+    "title": "Our Detailed Demands",
+    "subtitle": "Core demands prioritizing healthcare and education over sports infrastructure. We want hospitals, not stadiums.",
+    "urgentMessage": "Nationwide movement demanding government reallocate World Cup spending to essential services",
+    "socialDemands": "Social Demands",
+    "socialDesc": "Essential services that directly impact citizens' daily lives and well-being",
+    "economicDemands": "Economic Demands",
+    "economicDesc": "Economic reforms to create opportunities and improve living standards for all Moroccans",
+    "currentProblems": "Current Problems",
+    "whatWeDemand": "What We Demand",
+    "coreMessage": "CORE MESSAGE",
+    "hospitalsOverStadiums": "Hospitals before stadiums - Healthcare and education must come before sports infrastructure",
+    "supportDemands": "Support These Demands",
+    "supportDescription": "These demands represent the collective voice of the Moroccan people for a more just, equitable, and prosperous society. Join us in advocating for positive change.",
+    "signPetition": "Sign the Petition",
+    "supportMovement": "Support our movement",
+    "shareDemands": "Share These Demands",
+    "spreadAwareness": "Spread awareness",
+    "cities": "Cities",
+    "sectors": "Sectors",
+    "demands": "Demands",
+    "peaceful": "Peaceful"
+  },
+  "education": {
+    "title": "Education System Overhaul",
+    "problems": [
+      "Few schools in rural and remote areas",
+      "Teacher shortage and overcrowded classrooms",
+      "Outdated and non-digital curricula",
+      "Weak English learning opportunities"
+    ],
+    "demands": [
+      "Build and equip new schools in remote areas",
+      "Hire teachers to reduce overcrowding in classrooms",
+      "Modernize curricula and digitize education",
+      "Support school transportation for students"
+    ],
+    "criticalReform": "CRITICAL REFORM",
+    "englishReform": "Adopt English as second language instead of French to prepare youth for global opportunities"
+  },
+  "health": {
+    "title": "Public Health Emergency",
+    "problems": [
+      "Few doctors compared to population",
+      "Hospitals lack equipment and supplies",
+      "High medicine prices",
+      "Weak ambulance services in remote areas",
+      "Long patient appointments due to lack of digitization"
+    ],
+    "demands": [
+      "Increase the number of doctors per 1000 citizens to international standards",
+      "Provide essential medical supplies and equipment to all healthcare facilities",
+      "Support local pharmaceutical production to reduce medicine prices",
+      "Develop ambulance and medical transport services in rural areas",
+      "Digitize medical appointments to reduce waiting times"
+    ],
+    "urgentPriority": "URGENT PRIORITY",
+    "hospitalsFirst": "Hospitals before stadiums - Stop spending billions on World Cup stadiums while hospitals lack basic supplies"
+  },
+  "living": {
+    "title": "Dignified Living & Human Rights",
+    "problems": [
+      "Inadequate and expensive housing",
+      "Weak public transport",
+      "Villages are semi-isolated and remote areas marginalized",
+      "Safe drinking water not widely available",
+      "Old or deteriorating infrastructure"
+    ],
+    "demands": [
+      "Provide affordable, decent housing for all families",
+      "Improve public transport infrastructure nationwide",
+      "Break isolation from villages and semi-rural areas",
+      "Provide safe drinking water meeting international standards across the kingdom",
+      "Repair roads, bridges, water and electricity networks"
+    ]
+  },
+  "economy": {
+    "title": "Economic Reform & Justice",
+    "problems": [
+      "High prices of basic goods",
+      "Weak salaries and pensions",
+      "High unemployment especially among youth",
+      "Monopolies widespread, little fair competition",
+      "Large and multinational corporations without adequate oversight",
+      "Privatization has worsened problems",
+      "Weak investment in Moroccan companies",
+      "Heavy dependence on international loans"
+    ],
+    "demands": [
+      "Reduce prices and support essential goods for families",
+      "Improve salaries and pensions to match living costs",
+      "Create job opportunities for youth and reduce unemployment",
+      "Fight monopolies and encourage fair competition",
+      "Support small and medium enterprises (SMEs)",
+      "Strengthen oversight of large/multinational corporations",
+      "Limit excessive privatization of public services",
+      "Invest in Moroccan companies and local economy",
+      "Prioritize responsible repayment of international loans"
+    ],
+    "debtCrisis": "DEBT CRISIS",
+    "debtMessage": "Prioritize repayment of World Bank loans to reduce national debt burden"
+  },
+  "summary": {
+    "title": "In Summary, What We Demand",
+    "points": [
+      "Improve basic services (education, health, housing, transport, water)",
+      "Support the local economy and create job opportunities for youth",
+      "Ensure human rights and dignified living for all citizens",
+      "Digitize and modernize infrastructure and services to reduce disparities"
+    ]
+  }
+}

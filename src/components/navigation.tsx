@@ -3,9 +3,12 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { usePathname } from "next/navigation"
+import { useI18n } from "@/components/providers/i18n-provider"
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 export function Navigation() {
   const pathname = usePathname()
+  const { t } = useI18n()
 
   return (
     <nav className="bg-black text-white shadow-lg">
@@ -28,7 +31,7 @@ export function Navigation() {
           <div className="hidden lg:flex items-center bg-red-600 px-3 py-1 rounded">
             <div className="w-2 h-2 bg-white rounded-full animate-pulse mr-2"></div>
             <span className="text-xs font-semibold text-white tracking-wide">
-              LIVE: Protests Continue Nationwide
+              {t('common.live')}: {t('hero.liveUpdate')}
             </span>
           </div>
 
@@ -43,7 +46,7 @@ export function Navigation() {
                     : 'text-gray-300 border-transparent hover:text-white hover:border-red-400'
                 }`}
               >
-                Home
+                {t('navigation.home')}
               </Link>
               <Link
                 href="/demands"
@@ -53,7 +56,7 @@ export function Navigation() {
                     : 'text-gray-300 border-transparent hover:text-white hover:border-red-400'
                 }`}
               >
-                Demands
+                {t('navigation.demands')}
               </Link>
               <Link
                 href="/timeline"
@@ -63,7 +66,7 @@ export function Navigation() {
                     : 'text-gray-300 border-transparent hover:text-white hover:border-red-400'
                 }`}
               >
-                Timeline
+                {t('navigation.timeline')}
               </Link>
               <Link
                 href="/resources"
@@ -73,13 +76,14 @@ export function Navigation() {
                     : 'text-gray-300 border-transparent hover:text-white hover:border-red-400'
                 }`}
               >
-                Resources
+                {t('navigation.resources')}
               </Link>
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="flex items-center space-x-3">
+            <LanguageSwitcher />
             <Button
               variant="ghost"
               className="text-white hover:bg-gray-800 text-sm font-semibold"
@@ -88,7 +92,7 @@ export function Navigation() {
             >
               <a href="https://discord.gg/genz212" target="_blank" rel="noopener noreferrer">
                 <span className="text-lg">💬</span>
-                Join Discord
+                {t('hero.joinDiscord')}
               </a>
             </Button>
             <Button
@@ -98,7 +102,7 @@ export function Navigation() {
               asChild
             >
               <Link href="/timeline">
-                Live Updates
+                {t('callToAction.latestUpdates')}
               </Link>
             </Button>
           </div>
